@@ -51,16 +51,4 @@ public class EmployeeService {
         return new ArrayList<>(employees);
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        EmployeeService that = (EmployeeService) o;
-        return Objects.equals(employees, that.employees);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(employees);
-    }
 }
