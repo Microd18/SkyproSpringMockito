@@ -33,7 +33,7 @@ public class Employee {
 
     public void setName(String name){
         if (!StringUtils.isAlpha(name)){
-            throw new InvalidInputException("йоу");
+            throw new InvalidInputException("Неверные символы");
         }
 
         name = StringUtils.capitalize(name);
@@ -43,7 +43,7 @@ public class Employee {
 
     public void setSurname(String surname) {
         if (!StringUtils.isAlpha(surname)){
-            throw new InvalidInputException("йоу");
+            throw new InvalidInputException("Неверные символы");
         }
 
         surname = StringUtils.capitalize(surname);
@@ -65,10 +65,6 @@ public class Employee {
 
     public double getSalary() {
         return salary;
-    }
-
-    public int getId() {
-        return id;
     }
 
     @Override
